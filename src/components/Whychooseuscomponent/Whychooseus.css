@@ -1,0 +1,26 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    position: relative; /* Ensure the ::before pseudo-element covers the entire element */
+}
+
+.App::before {
+    content: "";
+    background-image: url("../../../public/assets/pexels-motional-studio-1081685.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px); /* Apply the blur effect to the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+
+.AppContent {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 20px;
+}
